@@ -1,0 +1,6 @@
+-Web streaming film-
+web ini dibuat dari html,css/bootstrap, dan javascript
+untuk masuk ke page film harus masuk terlebih dahulu
+1.masuk dengan email & password (bebas/ngasal)
+2.setelah masuk akan di arahkan ke page film
+3.Semoga Suka, thanks :)
