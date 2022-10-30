@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet" />
+    <title>category</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid d-flex p-3">
+      <!-- start sidebar -->
+      <aside class="col-sm-2">
+        <img src="../img/stream.svg" alt="gambar stream" class="img-fluid text-center mt-4 none" />
+
+        <!--start hamburger menu -->
+        <button
+          class="btn togle text-white"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header bg-dark">
+            <h5 class="offcanvas-title text-white fw-bolder fs-2" id="offcanvasWithBothOptionsLabel">
+              <span class="color">Nonton</span>Film
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-dark">
+            <div class="row row-cols-1 p-1">
+              <div class="col kolom mb-3 p-2">
+                <a href="../film/index.html" class="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-movie"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <line x1="8" y1="4" x2="8" y2="20"></line>
+                    <line x1="16" y1="4" x2="16" y2="20"></line>
+                    <line x1="4" y1="8" x2="8" y2="8"></line>
+                    <line x1="4" y1="16" x2="8" y2="16"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="16" y1="8" x2="20" y2="8"></line>
+                    <line x1="16" y1="16" x2="20" y2="16"></line>
+                  </svg>
+                  Film</a
+                >
+              </div>
+              <div class="col mb-3 kolom-active p-2">
+                <a href="/category/index.html" class="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-category-2"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 4h6v6h-6z"></path>
+                    <path d="M4 14h6v6h-6z"></path>
+                    <circle cx="17" cy="17" r="3"></circle>
+                    <circle cx="7" cy="7" r="3"></circle>
+                  </svg>
+                  Kategori</a
+                >
+              </div>
+              <div class="col mb-3 kolom p-2">
+                <a href="/index.html" class="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-logout"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                    <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                  </svg>
+                  Keluar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end hamburger menu -->
+
+        <!-- start menu sidebar -->
+        <div class="row row-cols-1 p-1 none">
+          <div class="col kolom mt-4 p-2">
+            <a href="../film/index.html" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-movie"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                <line x1="8" y1="4" x2="8" y2="20"></line>
+                <line x1="16" y1="4" x2="16" y2="20"></line>
+                <line x1="4" y1="8" x2="8" y2="8"></line>
+                <line x1="4" y1="16" x2="8" y2="16"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="16" y1="8" x2="20" y2="8"></line>
+                <line x1="16" y1="16" x2="20" y2="16"></line>
+              </svg>
+              Film</a
+            >
+          </div>
+          <div class="col mt-4 kolom-active p-2">
+            <a href="../category/index.html" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-category-2"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M14 4h6v6h-6z"></path>
+                <path d="M4 14h6v6h-6z"></path>
+                <circle cx="17" cy="17" r="3"></circle>
+                <circle cx="7" cy="7" r="3"></circle>
+              </svg>
+              Kategori
+            </a>
+          </div>
+          <div class="col mt-4 kolom p-2">
+            <a href="/index.html" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-logout"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+              </svg>
+              Keluar
+            </a>
+          </div>
+        </div>
+        <!-- end menu sidebar -->
+      </aside>
+      <!-- end sidebar -->
+
+      <!-- start navbar  && content -->
+      <div class="container col">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white none fw-bold fs-2" href="#"><span class="color">Nonton</span>Film</a>
+            <div class="d-flex justify-content-end align-items-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav me-1 user">
+                <a class="nav-link text-white" aria-current="page" href="#"> Welcome, XXI </a>
+              </div>
+              <img src="../img/user.png" alt="poto user" class="rounded-circle" />
+            </div>
+          </div>
+        </nav>
+
+        <!-- start breadcrumb -->
+        <nav aria-label="breadcrumb" class="" style="--bs-breadcrumb-divider: '>'">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-white">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Masuk</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Film</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+          </ol>
+        </nav>
+        <!-- end breadcrumb -->
+
+        <main>
+          <div class="row mb-lg-5">
+            <h3 class="fw-bold text-white mb-3">Horor</h3>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/horor1.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Nope (2022)</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/smile.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Smile</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film//silent.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Silent (2022)</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h3 class="fw-bold text-white mb-3">Action</h3>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/action1.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Detevtive Vs sleuths (2022)</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/action2.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Top Gun</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/action3.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Viruman</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h3 class="fw-bold text-white mb-3">Korean Drama</h3>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/k-drama1.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Business Proposal</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/k-drama2.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">It's Okay to Not Be Okay</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card p-3 text-center bg-transparent" style="width: 19rem">
+                <img src="../img/film/k-drama3.jpg" class="card-img-top img-radius" alt="film ke1" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">The Roundup</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- end navbar && content -->
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
