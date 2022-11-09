@@ -233,6 +233,25 @@
             </div>
           </div>
         </nav>
+        <div class="alert alert-success" role="alert">
+          Succes Loggin, enjoy your movie
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-x i-alert"
+            width="20"
+            height="25"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
 
         <!-- start breadcrumb -->
         <nav aria-label="breadcrumb" class="" style="--bs-breadcrumb-divider: '>'">
@@ -423,5 +442,14 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- my script -->
+    <script>
+      const icon = document.querySelector(".i-alert");
+      const alert = document.querySelector(".alert");
+
+      icon.addEventListener("click", () => {
+        alert.style.display = "none";
+      });
+    </script>
   </body>
 </html>
