@@ -1,7 +1,6 @@
 body {
   height: 200vh;
   background-color: #171717;
-  /* background-color: rgb(10, 7, 27); */
 }
 
 .bg-img {
@@ -65,7 +64,6 @@ body {
 }
 
 .gambar:hover {
-  /* transform: scale(1.07); */
   box-shadow: 0.5px 2px 5px 3px #da0037;
 }
 
@@ -84,7 +82,6 @@ body {
   font-size: 28px;
   color: #da0037;
 }
-
 /* end font Awesome */
 
 @media (max-width: 650px) {
