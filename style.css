@@ -65,7 +65,7 @@ body {
 }
 
 .gambar:hover {
-  transform: scale(1.07);
+  /* transform: scale(1.07); */
   box-shadow: 0.5px 2px 5px 3px #da0037;
 }
 

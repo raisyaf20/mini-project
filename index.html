@@ -186,6 +186,14 @@
     <script>
       const btn = document.querySelector(".submit");
       btn.addEventListener("click", () => alert("Thanks for feedback!"));
+
+      let gambar = document.querySelectorAll(".gambar");
+
+      gambar.forEach((el) => {
+        el.onmouseover = () => (el.style.transform = "scale(1.07)");
+        el.onmouseout = () => (el.style.transform = "inherit");
+        // console.log(el);
+      });
     </script>
   </body>
 </html>
