@@ -52,8 +52,13 @@ body {
   border-radius: 14px;
 }
 
+.img-radius {
+  transition: all 0.8s;
+}
+
 .img-radius:hover {
-  border: 3px solid white;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 640px) {
